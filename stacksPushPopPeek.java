@@ -22,7 +22,7 @@ public class stacksPushPopPeek {
         System.out.println(sts+ "....>"+sts.peek()+" +"+sts.size());
         sts.pop();
         System.out.println(sts+ "....>"+" +"+sts.size());
-        
+
 
 
 
