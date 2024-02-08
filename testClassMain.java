@@ -7,6 +7,7 @@ public class testClassMain {
        // Vehicle veh=new Vehicle(2);
         car car=new car();
         car.commute();
+        car.makeStartSound();
 
     }
 }
