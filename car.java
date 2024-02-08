@@ -7,4 +7,9 @@ public class car  extends  Vehicle{
     public car() {
         super(4);
     }
+
+    @Override
+    public void makeStartSound() {
+
+    }
 }
