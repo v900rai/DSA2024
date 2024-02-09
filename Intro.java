@@ -15,6 +15,19 @@ class Daba{
 
 public class Intro {
 
+    /**
+     * This method inserts a new node at the end of Linked List
+     *
+     * @param tail
+     * @param data
+     */
+    public static Daba insertNewDabba(Daba tail, int data){
+        Daba nayaDabba = new Daba(data, null);
+        tail.next = nayaDabba;
+        tail = nayaDabba;
+        return tail;
+    }
+
 
     public static void main(String[] args) {
         int arr[]={5,6,7,8,9};
@@ -33,6 +46,10 @@ public class Intro {
             }
 
         }
+
+        tail = insertNewDabba(tail, 10);
+        insertNewDabba(tail, 15);
+
         // print linkedList
         Daba temp=head;
         while (temp!=null){
