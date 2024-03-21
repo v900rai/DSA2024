@@ -1,19 +1,25 @@
-package BasicRecursion;
+package sept2023to200;
 
-public class FibonacciSeries {
-    public static void main(String[] args) {
-        int count = 0;
-        int a=0;
-        int b=1;
-        System.out.print(a);
-        System.out.print(b);
-        while(count <= 10){
-            int ans = a + b;
-            System.out.print(ans);
-            a = b;
-            b = ans;
-            count++;
-        }
+import java.util.Scanner;
 
-    }
+public class FibonacciSeries 
+{
+	public static void main(String []args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number");
+		int num=sc.nextInt();
+		            int a = 0,
+		            b = 1, c;
+		        for (int i = 1; i <= num; i++)
+		        {
+		            System.out.println(a);
+		            c = a + b;
+		            a = b;
+		            b = c;
+		        }
+		
+		
+	}
+
 }
